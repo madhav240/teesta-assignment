@@ -18,9 +18,9 @@ export default function OptionsSection({ optionName }: { optionName: 'food' | 's
   const [activeLocation, setActiveLocation] = useState(option.locations[0])
 
   return (
-    <div className="flex flex-col items-stretch text-sm">
+    <div className="flex flex-col items-stretch px-2 text-sm">
       <div>
-        <div className="flex w-full gap-6">
+        <div className="flex w-full flex-col gap-6 lg:flex-row">
           <div className="w-[265px] shrink-0">
             <div className="pt-5 pb-[30px] text-xl font-medium text-[#333]">
               <span className="capitalize">{optionName} Options</span>
@@ -41,7 +41,7 @@ export default function OptionsSection({ optionName }: { optionName: 'food' | 's
           <div className="_1u80jhm6">
             <div className="mb-5 flex border-b">
               <ul
-                className="ant-menu-horizontal ant-menu-light clear-both m-0 flex w-full min-w-full list-none p-0 text-sm outline-none"
+                className="ant-menu-horizontal ant-menu-light clear-both m-0 flex w-full min-w-full list-none flex-wrap p-0 text-sm outline-none"
                 data-menu-list="true"
                 role="menu"
                 tabIndex={0}
@@ -81,12 +81,12 @@ export default function OptionsSection({ optionName }: { optionName: 'food' | 's
               </ul>
               <div aria-hidden="true" style={{ display: 'none' }} />
             </div>
-            <div className="_1u80jhm8">
+            <div className="grid grid-cols-2 gap-5 px-2 py-2 sm:grid-cols-3">
               {(option.data as any)[activeLocation][activeFilter].map(
                 (item: any, index: number) => (
-                  <div key={index} className="mr-5 overflow-hidden">
+                  <div key={index} className="overflow-hidden">
                     <img
-                      alt="Taj Jaisalmer"
+                      alt={item.title}
                       className="h-[180px] w-full rounded-lg object-cover"
                       data-nimg={1}
                       decoding="async"

@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import { Fragment } from 'react'
 
 import ItinerarySection from '@/components/itinerary-section'
+import Navbar from '@/components/navbar'
 import OptionsSection from '@/components/options-section'
 import TripData from '@/lib/trip.json'
 
@@ -10,109 +11,22 @@ export default function Home() {
 
   return (
     <>
-      <nav className="z-50 flex h-[8vh] items-center justify-between border-b-[2px] border-b-gray-100 bg-white px-4 py-2">
-        <section className="flex items-center">
-          <img
-            alt="teesta_logo"
-            data-nimg={1}
-            decoding="async"
-            height={50}
-            loading="lazy"
-            src="/images/mainlogo.svg"
-            style={{ color: 'transparent' }}
-            width={180}
-          />
-        </section>
-        <section className="align-top-[-0.125em] antiliased ml-[200px] flex h-12 w-1/3 justify-center rounded-3xl bg-[#f1f4f7] p-3">
-          <span
-            aria-label="search"
-            className="inline-flex items-center text-center text-lg"
-            role="img"
-            style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 16 }}
-          >
-            <svg
-              aria-hidden="true"
-              data-icon="search"
-              fill="currentColor"
-              focusable="false"
-              height="1em"
-              viewBox="64 64 896 896"
-              width="1em"
-            >
-              <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z" />
-            </svg>
-          </span>
-          <input
-            className="inline-block w-full rounded-md px-2.5 py-1 text-sm text-ellipsis outline-none"
-            defaultValue=""
-            placeholder="Search anything related to travel"
-            style={{ color: '#909090' }}
-            type="text"
-          />
-        </section>
-        <section className="flex items-center">
-          <a className="mx-2.5 text-lg font-medium" href="https://teesta-partner-web.vercel.app">
-            <p>Partner with Teesta</p>
-          </a>
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-bell"
-            color="rgba(0, 0, 0, 0.85)"
-            data-icon="bell"
-            data-prefix="fal"
-            focusable="false"
-            role="img"
-            style={{ height: 24, width: 24, margin: '0 30px' }}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M208 16c0-8.8 7.2-16 16-16s16 7.2 16 16l0 16.8c80.9 8 144 76.2 144 159.2l0 29.1c0 43.7 17.4 85.6 48.3 116.6l2.8 2.8c8.3 8.3 13 19.6 13 31.3c0 24.5-19.8 44.3-44.3 44.3L44.3 416C19.8 416 0 396.2 0 371.7c0-11.7 4.7-23 13-31.3l2.8-2.8C46.6 306.7 64 264.8 64 221.1L64 192c0-83 63.1-151.2 144-159.2L208 16zm16 48C153.3 64 96 121.3 96 192l0 29.1c0 52.2-20.7 102.3-57.7 139.2L35.6 363c-2.3 2.3-3.6 5.4-3.6 8.7c0 6.8 5.5 12.3 12.3 12.3l359.4 0c6.8 0 12.3-5.5 12.3-12.3c0-3.3-1.3-6.4-3.6-8.7l-2.8-2.8c-36.9-36.9-57.7-87-57.7-139.2l0-29.1c0-70.7-57.3-128-128-128zM193.8 458.7c4.4 12.4 16.3 21.3 30.2 21.3s25.8-8.9 30.2-21.3c2.9-8.3 12.1-12.7 20.4-9.8s12.7 12.1 9.8 20.4C275.6 494.2 251.9 512 224 512s-51.6-17.8-60.4-42.7c-2.9-8.3 1.4-17.5 9.8-20.4s17.5 1.4 20.4 9.8z"
-              fill="currentColor"
-            />
-          </svg>
-          <div>
-            <img
-              alt="dummy_user"
-              data-nimg={1}
-              decoding="async"
-              height={36}
-              loading="lazy"
-              src="/images/user.jpeg"
-              width={36}
-              style={{
-                color: 'transparent',
-                borderRadius: '50%',
-                cursor: 'pointer',
-                objectFit: 'cover',
-                width: 43,
-                height: 42,
-              }}
-            />
-          </div>
-        </section>
-      </nav>
+      <Navbar />
 
       <div className="flex flex-col bg-[#f5f5f5] text-sm">
         <main>
-          <div className="flex items-center justify-center bg-white">
-            <div
-              className="flex flex-col items-stretch"
-              style={{ maxWidth: 1448, gap: 24, padding: '3% 6% 6%' }}
-            >
+          <div className="flex items-center justify-center bg-white p-2 lg:px-[6%] lg:pt-[3%] lg:pb-[6%]">
+            <div className="flex flex-col items-stretch" style={{ maxWidth: 1448, gap: 24 }}>
               <div className="flex flex-col items-stretch">
                 <div>
-                  <div
-                    className="flex flex-wrap"
-                    style={{ marginLeft: '-4px', marginRight: '-4px', rowGap: 8 }}
-                  >
+                  <div className="flex flex-col flex-wrap lg:-mr-1 lg:-ml-1" style={{ rowGap: 8 }}>
                     <div
-                      className="relative flex w-7/12"
+                      className="relative flex lg:w-7/12"
                       style={{ paddingLeft: 4, paddingRight: 4 }}
                     >
                       <img
                         alt="hotel"
-                        className="h-[434px] w-full rounded-tl-[20px] rounded-bl-[20px] object-cover"
+                        className="h-96 w-full rounded-t-[20px] object-cover lg:h-[434px] lg:rounded-tr-none"
                         data-nimg={1}
                         decoding="async"
                         height={432}
@@ -123,13 +37,10 @@ export default function Home() {
                       />
                     </div>
                     <div
-                      className="relative flex w-5/12"
+                      className="relative flex lg:w-5/12"
                       style={{ paddingLeft: 4, paddingRight: 4 }}
                     >
-                      <div
-                        className="flex flex-wrap"
-                        style={{ marginLeft: '-4px', marginRight: '-4px', rowGap: 8 }}
-                      >
+                      <div className="flex flex-wrap lg:-mr-1 lg:-ml-1" style={{ rowGap: 8 }}>
                         {data.hero.images.slice(1).map((image, index) => (
                           <div
                             key={index}
@@ -146,7 +57,8 @@ export default function Home() {
                               width={261}
                               className={classNames(
                                 'h-[212px] w-full object-cover',
-                                index === 1 && 'rounded-tr-[20px]',
+                                index === 1 && 'lg:rounded-tr-[20px]',
+                                index === 2 && 'rounded-bl-[20px] lg:rounded-bl-none',
                                 index === 3 && 'rounded-br-[20px]'
                               )}
                             />
@@ -157,7 +69,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex h-full w-[763px] flex-col items-stretch" style={{ gap: 24 }}>
+              <div
+                className="flex h-full flex-col items-stretch px-2 lg:w-[763px] lg:px-0"
+                style={{ gap: 24 }}
+              >
                 <div className="flex text-4xl font-medium">
                   <span>{data.hero.title}</span>
                 </div>
@@ -245,7 +160,7 @@ export default function Home() {
                   role="separator"
                   style={{ margin: 0 }}
                 />
-                <div className="flex h-14 items-center" style={{ gap: 16 }}>
+                <div className="flex items-center lg:h-14" style={{ gap: 16 }}>
                   <div className="relative inline-block h-[50px] rounded-[50%] bg-[linear-gradient(45deg,#ff001f,#fe5005,#a449ff,#33ceff,#ffd600)] p-px">
                     <span className="relative m-0 inline-flex size-12 list-none items-center justify-center overflow-hidden rounded-[50%] border border-transparent bg-transparent p-0 text-center align-middle text-sm whitespace-nowrap text-white">
                       <img src={data.creator.creator_profile_pic} />
@@ -319,12 +234,12 @@ export default function Home() {
                             ))}
                           </ul>
                         </div>
-                        <div className="flex" style={{ gap: 8 }}>
+                        <div className="flex pr-2" style={{ gap: 8 }}>
                           {note.images.map((image, index) => (
                             <img
                               key={index}
                               alt="Trip Notes"
-                              className="h-[336px] w-[584px] rounded-xl object-cover"
+                              className="h-[336px] w-1/2 rounded-xl object-cover"
                               decoding="async"
                               height={336}
                               loading="lazy"
@@ -343,7 +258,10 @@ export default function Home() {
               <div className="divider clear-both my-12 flex w-full min-w-full" role="separator" />
               <ItinerarySection />
 
-              <div className="flex h-full w-[763px] flex-col items-stretch" style={{ gap: 24 }}>
+              <div
+                className="flex h-full flex-col items-stretch px-2 lg:w-[763px]"
+                style={{ gap: 24 }}
+              >
                 {data.notes.map((note, index) => (
                   <div key={index} className="flex flex-col items-stretch" style={{ gap: 16 }}>
                     <span className="text-left text-[28px] font-medium text-[#424242]">
@@ -377,12 +295,12 @@ export default function Home() {
                               ))}
                             </ul>
                           </div>
-                          <div className="flex" style={{ gap: 8 }}>
+                          <div className="flex pr-2" style={{ gap: 8 }}>
                             {note.images.map((image, index) => (
                               <img
                                 key={index}
                                 alt="Trip Notes"
-                                className="h-[336px] w-[584px] rounded-xl object-cover"
+                                className="h-[336px] w-1/2 rounded-xl object-cover"
                                 data-nimg={1}
                                 decoding="async"
                                 height={336}
@@ -495,7 +413,7 @@ export default function Home() {
                 className="divider clear-both mx-12 flex w-full min-w-full list-none p-0 text-sm"
                 role="separator"
               />
-              <div className="flex w-full flex-col items-stretch text-sm" style={{ gap: 16 }}>
+              <div className="flex w-full flex-col items-stretch px-2 text-sm" style={{ gap: 16 }}>
                 <div className="flex w-full flex-col items-stretch text-sm" style={{ gap: 16 }}>
                   <div className="flex items-center justify-between text-sm">
                     <p className="m-0 p-0 text-xl font-medium text-[#202020]">Frequently Asked</p>
@@ -524,7 +442,7 @@ export default function Home() {
                         <p className="m-0 text-[16px] font-medium text-[#202020]">
                           Q{index + 1}: {item.question}
                         </p>
-                        <div className="ml-5 flex items-center" style={{ gap: 4 }}>
+                        <div className="ml-5 flex flex-wrap items-center" style={{ gap: 4 }}>
                           <span
                             className="relative m-0 inline-flex list-none items-center justify-center overflow-hidden rounded-[50%] border bg-transparent p-0 text-center align-middle text-lg whitespace-nowrap text-white"
                             style={{ width: 24, height: 24, fontSize: 18 }}
@@ -549,7 +467,7 @@ export default function Home() {
                             <span className="m-0 text-sm text-[#202020]">{item.answer}</span>
                           </div>
                           <div className="flex items-center justify-between text-sm">
-                            <div className="flex items-center" style={{ gap: 6 }}>
+                            <div className="flex flex-wrap items-center" style={{ gap: 6 }}>
                               <span
                                 className="relative m-0 inline-flex list-none items-center justify-center overflow-hidden rounded-[50%] border bg-transparent p-0 text-center align-middle text-lg whitespace-nowrap text-white"
                                 style={{ width: 24, height: 24, fontSize: 18 }}
@@ -602,18 +520,15 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col items-stretch text-sm" style={{ gap: 16 }}>
+              <div className="flex flex-col items-stretch px-2 text-sm" style={{ gap: 16 }}>
                 <span className="text-left text-[28px] font-medium text-[#424242]">
                   Similar Trips
                 </span>
                 <div className="flex flex-col items-stretch text-sm" style={{ gap: 24 }}>
                   <div className="flex flex-col items-stretch text-sm" style={{ gap: 16 }}>
                     <div
-                      // className="flex min-w-0 flex-wrap text-sm"
-                      className="grid grid-cols-3"
+                      className="grid grid-cols-3 text-sm lg:mr-[-11.5px] lg:ml-[-11.5px]"
                       style={{
-                        marginLeft: '-11.5px',
-                        marginRight: '-11.5px',
                         rowGap: 23,
                       }}
                     >
@@ -661,7 +576,7 @@ export default function Home() {
               </div>
               <footer>
                 <div className="_1lu1ibj1 flex text-sm">
-                  <section className="w-[calc(100%/3)]">
+                  <section className="w-[calc(100%/3)] px-2">
                     <p className="text-[16px] font-semibold text-[#424242]">Services</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Flights</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Stays</p>
@@ -670,18 +585,18 @@ export default function Home() {
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Bus</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Tour Guides</p>
                   </section>
-                  <section className="w-[calc(100%/3)]">
+                  <section className="w-[calc(100%/3)] px-2">
                     <p className="text-[16px] font-semibold text-[#424242]">Support</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Contact Us</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Email</p>
                   </section>
-                  <section className="w-[calc(100%/3)]">
+                  <section className="w-[calc(100%/3)] px-2">
                     <p className="text-[16px] font-semibold text-[#424242]">Teesta</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">About Us</p>
                     <p className="mt-1.5 cursor-pointer text-sm text-[#424242]">Careers</p>
                   </section>
                 </div>
-                <div className="flex flex-wrap items-center justify-between gap-2 py-6 text-sm">
+                <div className="flex flex-wrap items-center justify-between gap-8 px-2 py-6 text-sm lg:gap-2">
                   <div className="clear-both flex gap-6 text-sm">
                     <p className="cursor-pointer text-xs text-[#909090]">© 2024 Teesta LLP</p>
                     <p className="cursor-pointer text-xs text-[#909090]">Privacy</p>

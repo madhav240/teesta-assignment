@@ -65,10 +65,13 @@ export default function ItinerarySection() {
 
   return (
     <div className="flex w-full flex-col items-stretch" style={{ gap: 16 }}>
-      <span className="sticky top-6 text-left text-3xl font-medium text-[#424242]"> Itinerary</span>
-      <div className="flex gap-2.5 text-sm">
+      <span className="sticky top-6 z-20 px-2 text-left text-3xl font-medium text-[#424242]">
+        {' '}
+        Itinerary
+      </span>
+      <div className="flex flex-col gap-2.5 text-sm lg:flex-row">
         <div
-          className="sticky top-[4.8rem] flex h-full w-[137px] shrink-0 flex-col items-stretch overflow-y-auto bg-white py-4"
+          className="sticky top-0 z-20 flex h-full w-screen shrink-0 flex-row items-stretch overflow-x-auto overflow-y-auto bg-white px-2 py-4 lg:top-[4.8rem] lg:w-[137px] lg:flex-col"
           style={{ gap: 12 }}
         >
           {data.itinerary.map((day, index) => (
@@ -99,6 +102,7 @@ export default function ItinerarySection() {
             </button>
           ))}
         </div>
+
         <div className="flex w-full grow">
           <div className="scroll-w-none relative w-full max-w-[720px] scroll-pt-5 scroll-smooth p-5">
             {data.itinerary.map((day, index) => (
@@ -133,7 +137,7 @@ export default function ItinerarySection() {
                       </p>
                       <img
                         alt={day.title}
-                        className="mb-6 h-[480px] w-[580px] rounded-lg object-cover"
+                        className="mb-6 rounded-lg object-cover lg:h-[480px] lg:w-[580px]"
                         src={day.image}
                       />
                     </div>
@@ -160,7 +164,7 @@ export default function ItinerarySection() {
                           style={{ gap: 12 }}
                         >
                           <div className="flex flex-col items-stretch pl-2" style={{ gap: 12 }}>
-                            <div className="m-0 flex w-[600px] items-center justify-between pr-2.5 text-lg font-medium">
+                            <div className="m-0 flex items-center justify-between pr-2.5 text-lg font-medium lg:w-[600px]">
                               <span>{item.name}</span>
                               <button
                                 className="relative inline-flex h-8 cursor-pointer touch-manipulation justify-center gap-2 rounded-md border-none bg-none px-[15px] py-1 text-center text-[16px] leading-normal font-medium whitespace-nowrap text-[#0077c2] underline decoration-[#0077c2] shadow-xs outline-none select-none"
@@ -179,17 +183,17 @@ export default function ItinerarySection() {
                             </div>
                           </div>
                           <div className="flex flex-col items-stretch" style={{ gap: 12 }}>
-                            <p className="text-decoration-skip-ink mb-4 w-[600px] text-left text-sm text-[#202020]">
+                            <p className="text-decoration-skip-ink mb-4 text-left text-sm text-[#202020] lg:w-[600px]">
                               {item.description}
                             </p>
                             <img
                               alt={item.name}
-                              className="h-[480px] w-[580px] rounded-lg object-cover"
+                              className="h-[480px] rounded-lg object-cover lg:w-[580px]"
                               src={item.image}
                             />
                             <div className="hidden w-full items-center" />
                             <a
-                              className="relative flex h-[56px] w-[580px] cursor-pointer touch-manipulation items-center justify-between gap-2 rounded-xl bg-linear-[90deg,#e92d5d_3.37%,#95177a] px-[15px] py-1 text-center text-[16px] font-medium whitespace-nowrap text-white select-none hover:bg-linear-[#4096ff]"
+                              className="relative flex h-[56px] cursor-pointer touch-manipulation items-center justify-between gap-2 rounded-xl bg-linear-[90deg,#e92d5d_3.37%,#95177a] px-[15px] py-1 text-center text-[16px] font-medium whitespace-nowrap text-white select-none hover:bg-linear-[#4096ff] lg:w-[580px]"
                               href={item.teesta_link}
                               tabIndex={0}
                               target="_blank"
@@ -227,7 +231,6 @@ export default function ItinerarySection() {
           </div>
         </div>
       </div>
-      <div className="divider clear-both my-12 flex w-full min-w-full" role="separator" />
     </div>
   )
 }
