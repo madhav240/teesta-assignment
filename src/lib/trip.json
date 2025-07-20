@@ -1,0 +1,597 @@
+{
+    "data": [
+        {
+            "hero": {
+                "title": "Greece: The Ultimate 7-Day Itinerary",
+                "price": "€1,896.00",
+                "images": [
+                    "https://teesta.world/Athens-Plaka-2-1.jpg",
+                    "https://teesta.world/athens3-1.jpg",
+                    "https://teesta.world/Meteora-Monastery-View-pic-4-1.jpg",
+                    "https://teesta.world/Mykonos-Windmill--2.jpg",
+                    "https://teesta.world/Santorini-14-1.jpg"
+                ]
+            },
+            "creator": {
+                "createdBy": "Giselda",
+                "creator_profile_pic": "https://teesta.world/Santorini-13-1 (1).jpg",
+                "description": "Here’s a perfect itinerary to spend a week in Greece. Note that you can fly in and out of Athens to keep things simple. You’ll spend a few days exploring the history and culture of Athens, fly to the fairy-tale island of Santorini, and explore the breathtaking scenery there before flying back to Athens.",
+                "tags": [
+                    "Greece",
+                    "Athens",
+                    "Santorini"
+                ],
+                "activities": [
+                    "2-3 nights in Athens exploring the historical sites",
+                    "3-4 nights in Santorini enjoying the breathtaking scenery"
+                ]
+            },
+            "itinerary": [
+                {
+                    "day": "Day 1",
+                    "title": "Arrive in Athens",
+                    "description": "Land in Athens, check into your hotel, and grab your first Greek meal.",
+                    "image": "https://teesta.world/Mykonos-Stairs-1 (1).jpg",
+                    "map": "https://teesta.world/santorini-view-1.jpg",
+                    "tags": [
+                        "Stay",
+                        "Food"
+                    ],
+                    "items": [
+                        {
+                            "name": "Athens Hotel - Central Stay",
+                            "type": "Stay",
+                            "description": "Check into a comfortable hotel in the heart of Athens, perfect for exploring the city.",
+                            "link": "https://teesta.travel/stays/athens-central-stay",
+                            "latitude": 37.9763,
+                            "longitude": 23.7361,
+                            "image": "https://teesta.world/IMG_4453 (3).jpeg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Kuzina Greek Restaurant",
+                            "type": "Food",
+                            "description": "Enjoy authentic Greek cuisine with a modern twist at this popular restaurant in Thissio.",
+                            "link": "https://teesta.travel/experiences/kuzina-dinner",
+                            "latitude": 37.9722,
+                            "longitude": 23.7235,
+                            "image": "https://teesta.world/santorini-view2-1.jpg"
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 2",
+                    "title": "Explore Historic Athens",
+                    "description": "Visit the Acropolis, Parthenon, and explore Plaka neighborhood. Enjoy dinner with a view of the lit-up ruins.",
+                    "image": "https://teesta.world/Santorini-14-1.jpg",
+                    "tags": [
+                        "Experience",
+                        "Viewpoint"
+                    ],
+                    "items": [
+                        {
+                            "name": "Acropolis Tour",
+                            "type": "Experience",
+                            "description": "Take a guided tour of the Acropolis, including the iconic Parthenon and other ancient ruins.",
+                            "link": "https://teesta.travel/experiences/acropolis-tour",
+                            "latitude": 37.9715,
+                            "longitude": 23.7267,
+                            "image": "https://teesta.world/IMG_5885+(1) (1).jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Dinner at Dionysos Zonar's",
+                            "type": "Viewpoint",
+                            "description": "Dine with a stunning view of the illuminated Acropolis at this renowned restaurant.",
+                            "link": "https://teesta.travel/experiences/dionysos-dinner",
+                            "latitude": 37.9668,
+                            "longitude": 23.7287,
+                            "reel": {
+                                "thumbnailUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Images/1743196248622-thumbnail.png",
+                                "videoUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Videos/1743196245178-Winter is coming.mp4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 3",
+                    "title": "Ferry to Santorini",
+                    "description": "Travel by ferry to Santorini. Relax and enjoy your first sunset in Oia.",
+                    "image": "https://teesta.world/Milos-Kleftiko-Beach-1-1.jpg",
+                    "tags": [
+                        "Transfer",
+                        "Viewpoint"
+                    ],
+                    "items": [
+                        {
+                            "name": "Ferry from Athens to Santorini",
+                            "type": "Transfer",
+                            "description": "Board a scenic ferry from Athens to Santorini, enjoying views of the Aegean Sea.",
+                            "link": "https://teesta.travel/transfers/athens-to-santorini",
+                            "latitude": 36.3932,
+                            "longitude": 25.4615,
+                            "image": "https://teesta.world/santorini5-1.jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Oia Sunset Viewpoint",
+                            "type": "Viewpoint",
+                            "description": "Witness a breathtaking sunset in Oia, one of Santorini’s most picturesque spots.",
+                            "link": "https://teesta.travel/experiences/oia-sunset",
+                            "latitude": 36.4618,
+                            "longitude": 25.3754,
+                            "image": "https://teesta.world/santorini5-1.jpg"
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 4",
+                    "title": "Santorini Exploration",
+                    "description": "Spend your day exploring Fira, black sand beaches, and cliff-side restaurants.",
+                    "image": "https://teesta.world/santorini-windmill1-1.jpg",
+                    "tags": [
+                        "Experience",
+                        "Beach"
+                    ],
+                    "items": [
+                        {
+                            "name": "Fira Walking Tour",
+                            "type": "Experience",
+                            "description": "Stroll through Fira’s charming streets, admiring whitewashed buildings and caldera views.",
+                            "link": "https://teesta.travel/experiences/fira-walk",
+                            "latitude": 36.4167,
+                            "longitude": 25.4333,
+                            "image": "https://teesta.world/santorini-windmill1-1.jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Perissa Black Sand Beach",
+                            "type": "Beach",
+                            "description": "Relax on the unique black sand beach of Perissa, with clear waters and beachfront cafés.",
+                            "link": "https://teesta.travel/experiences/perissa-beach",
+                            "latitude": 36.3528,
+                            "longitude": 25.4739,
+                            "reel": {
+                                "thumbnailUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Images/1743196248360-thumbnail.png",
+                                "videoUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Videos/1743196244252-Experience the breathtaking viewVideo credit @ theumiimannofficial.mp4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 5",
+                    "title": "More of Santorini",
+                    "description": "Try a wine tour or relax at Ammoudi Bay. Don’t miss the evening vibes.",
+                    "image": "https://teesta.world/santorini+greece3-1.jpg",
+                    "tags": [
+                        "Experience",
+                        "Food"
+                    ],
+                    "items": [
+                        {
+                            "name": "Santorini Wine Tour",
+                            "type": "Experience",
+                            "description": "Discover Santorini’s volcanic wines with a guided tour of local vineyards.",
+                            "link": "https://teesta.travel/experiences/santorini-wine",
+                            "latitude": 36.4196,
+                            "longitude": 25.4453,
+                            "image": "https://teesta.world/Santorini-9-1 (1).jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Ammoudi Bay Seafood",
+                            "type": "Food",
+                            "description": "Savor fresh seafood at a taverna in Ammoudi Bay, nestled below Oia’s cliffs.",
+                            "link": "https://teesta.travel/experiences/ammoudi-seafood",
+                            "latitude": 36.4621,
+                            "longitude": 25.3742,
+                            "reel": {
+                                "thumbnailUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Images/1743196248622-thumbnail.png",
+                                "videoUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Videos/1743196245178-Winter is coming.mp4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 6",
+                    "title": "Ferry to Mykonos",
+                    "description": "Arrive in Mykonos. Head to Little Venice and enjoy the beach clubs.",
+                    "image": "https://teesta.world/Santorini-15-1.jpg",
+                    "tags": [
+                        "Transfer",
+                        "Experience"
+                    ],
+                    "items": [
+                        {
+                            "name": "Ferry from Santorini to Mykonos",
+                            "type": "Transfer",
+                            "description": "Take a ferry to Mykonos, soaking in the beauty of the Cyclades along the way.",
+                            "link": "https://teesta.travel/transfers/santorini-to-mykonos",
+                            "latitude": 37.4451,
+                            "longitude": 25.3289,
+                            "image": "https://teesta.world/Santorini-13-1 (1).jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Little Venice Walk",
+                            "type": "Experience",
+                            "description": "Explore Little Venice, where colorful buildings meet the sea, perfect for photos.",
+                            "link": "https://teesta.travel/experiences/little-venice",
+                            "latitude": 37.4458,
+                            "longitude": 25.327,
+                            "image": "https://teesta.world/Santorini-13-1 (1).jpg"
+                        }
+                    ]
+                },
+                {
+                    "day": "Day 7",
+                    "title": "Mykonos Town & Depart",
+                    "description": "Explore Mykonos town, windmills, and seaside cafés. Return to Athens and board your flight back home.",
+                    "image": "https://teesta.world/Santorini-10-1.jpg",
+                    "tags": [
+                        "Experience",
+                        "Viewpoint",
+                        "Transfer"
+                    ],
+                    "items": [
+                        {
+                            "name": "Mykonos Windmills",
+                            "type": "Viewpoint",
+                            "description": "Visit the iconic windmills of Mykonos, a symbol of the island’s heritage.",
+                            "link": "https://teesta.travel/experiences/mykonos-windmills",
+                            "latitude": 37.4452,
+                            "longitude": 25.3259,
+                            "image": "https://teesta.world/Mykonos-Windmill--2.jpg",
+                            "teesta_link": "https://teesta-webapp-theta.vercel.app/ExperienceDetails?ExperienceDocId=16231&isUniqueStay=false"
+                        },
+                        {
+                            "name": "Seaside Café at Alefkandra",
+                            "type": "Experience",
+                            "description": "Relax at a charming seaside café in Alefkandra, enjoying Mykonos’ vibrant vibe.",
+                            "link": "https://teesta.travel/experiences/alefkandra-cafe",
+                            "latitude": 37.4457,
+                            "longitude": 25.3268,
+                            "reel": {
+                                "thumbnailUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Images/1743196248360-thumbnail.png",
+                                "videoUrl": "https://pub-c6fde3e546a04352a8c17fda2a41ca51.r2.dev/Videos/1743196244252-Experience the breathtaking viewVideo credit @ theumiimannofficial.mp4"
+                            }
+                        },
+                        {
+                            "name": "Flight to India from Athens",
+                            "type": "Transfer",
+                            "description": "Fly back to Athens from Mykonos and catch your international flight home.",
+                            "link": "https://teesta.travel/flights/athens-to-india",
+                            "latitude": 37.9364,
+                            "longitude": 23.9475,
+                            "image": "https://teesta.world/IMG_5886+(1).jpg"
+                        }
+                    ]
+                }
+            ],
+            "notes": [
+                {
+                    "title": "Money Saving Tips",
+                    "description": "Avoid high fees at ATMs with these tips. It may seem easy to withdraw cash from any ATM, but the fees can add up quickly. By using the right ATMs, you can save money and avoid unnecessary charges.",
+                    "details": [
+                        "Use ATMs with lower fees—check for banks that don’t charge withdrawal fees for international cards.",
+                        "Withdraw larger amounts to reduce the number of transactions.",
+                        "Check if your bank has partnerships with local banks in Greece or India to avoid extra fees."
+                    ],
+                    "note": "Greek & Indian currency is more expensive to exchange locally in India/Greece, so plan ahead. I haven’t included the cost of flights to/from India/Greece in the total cost of this itinerary.",
+                    "images": [
+                        "https://teesta.world/IMG_4587+2 (1).jpeg",
+                        "https://teesta.world/IMG_2769 (1).jpeg"
+                    ]
+                }
+            ],
+            "totalCost": {
+                "title": "Total Cost of the Trip",
+                "breakdown": [
+                    {
+                        "item": "Accommodation",
+                        "price": "€800"
+                    },
+                    {
+                        "item": "Flights",
+                        "price": "€600"
+                    },
+                    {
+                        "item": "Activities",
+                        "price": "€300"
+                    },
+                    {
+                        "item": "Food",
+                        "price": "€150"
+                    },
+                    {
+                        "item": "Transport",
+                        "price": "€46"
+                    }
+                ],
+                "total": "€1,896"
+            },
+            "faq": [
+                {
+                    "question": "What can you do after a day?",
+                    "answer": "After a long day of exploring, you can relax with a traditional Greek or Indian meal, enjoy a sunset view, or take a leisurely walk through the local markets. Many areas like Plaka in Athens or the streets of Oia in Santorini offer a vibrant nightlife with live music and cultural performances"
+                },
+                {
+                    "question": "How can I book this itinerary?",
+                    "answer": "You can book this itinerary directly through the Testra platform. Simply click the ‘Book Now’ button, choose your dates, and follow the steps to confirm your booking. You’ll also have the option to customize parts of the trip if needed."
+                }
+            ],
+            "stayOptions": {
+                "locations": [
+                    "Athens",
+                    "Mykonos"
+                ],
+                "filters": [
+                    "Budget",
+                    "Luxury",
+                    "Comfortable"
+                ],
+                "data": {
+                    "Athens": {
+                        "Budget": [
+                            {
+                                "title": "Mariott Jaisalmer",
+                                "image": "https://teesta.world/IMG_2557.jpeg"
+                            },
+                            {
+                                "title": "Taj Jaisalmer",
+                                "image": "https://teesta.world/IMG_2032.jpeg"
+                            },
+                            {
+                                "title": "Westin Jaisalmer",
+                                "image": "https://teesta.world/Corfu-old-town--4.jpg"
+                            }
+                        ],
+                        "Luxury": [
+                            {
+                                "title": "Royal Athena",
+                                "image": "https://teesta.world/Corfu-Beach--1.jpg"
+                            },
+                            {
+                                "title": "Skyline Suites",
+                                "image": "https://teesta.world/Athens-12-1.jpg"
+                            },
+                            {
+                                "title": "Aegean Palace",
+                                "image": "https://teesta.world/Athens-11-1.jpg"
+                            }
+                        ],
+                        "Comfortable": [
+                            {
+                                "title": "Hera Comfort Inn",
+                                "image": "https://teesta.world/Athens-Riviera-1-1.jpg"
+                            },
+                            {
+                                "title": "Zappeion Suites",
+                                "image": "https://teesta.world/Athens-6-1+copy (2).jpg"
+                            },
+                            {
+                                "title": "Central Bliss",
+                                "image": "https://teesta.world/Athens-10-1.jpg"
+                            }
+                        ]
+                    },
+                    "Mykonos": {
+                        "Budget": [
+                            {
+                                "title": "Sea Breeze Hostel",
+                                "image": "https://teesta.world/Athens-Plaka-2-1.jpg"
+                            },
+                            {
+                                "title": "Sandy Budget Inn",
+                                "image": "https://teesta.world/athens3-1.jpg"
+                            },
+                            {
+                                "title": "Island Rest",
+                                "image": "https://teesta.world/Meteora-Monastery-View-pic-4-1.jpg"
+                            }
+                        ],
+                        "Luxury": [
+                            {
+                                "title": "Mykonos Grand Resort",
+                                "image": "https://teesta.world/Mykonos-Stairs-1 (1).jpg"
+                            },
+                            {
+                                "title": "Aegean Blue Villas",
+                                "image": "https://teesta.world/santorini-view-1.jpg"
+                            },
+                            {
+                                "title": "Sunset Elites",
+                                "image": "https://teesta.world/IMG_4453 (3).jpeg"
+                            }
+                        ],
+                        "Comfortable": [
+                            {
+                                "title": "White Wave Hotel",
+                                "image": "https://teesta.world/santorini-view2-1.jpg"
+                            },
+                            {
+                                "title": "Windmill Haven",
+                                "image": "https://teesta.world/Santorini-14-1.jpg"
+                            },
+                            {
+                                "title": "Central Bay Stay",
+                                "image": "https://teesta.world/IMG_5885+(1) (1).jpg"
+                            }
+                        ]
+                    }
+                }
+            },
+            "foodOptions": {
+                "locations": [
+                    "Athens",
+                    "Mykonos"
+                ],
+                "filters": [
+                    "Indian",
+                    "Veg",
+                    "Jain",
+                    "Halal",
+                    "Local Cuisine"
+                ],
+                "data": {
+                    "Athens": {
+                        "Indian": [
+                            {
+                                "title": "Maharaja Restaurant",
+                                "image": "https://teesta.world/Santorini-13-1 (1).jpg"
+                            },
+                            {
+                                "title": "Taj Vivanta",
+                                "image": "https://teesta.world/Santorini-10-1.jpg"
+                            },
+                            {
+                                "title": "Amar Punjabi Dhaba",
+                                "image": "https://teesta.world/Mykonos-Windmill--2.jpg"
+                            }
+                        ],
+                        "Veg": [
+                            {
+                                "title": "Sattvik Greens",
+                                "image": "https://teesta.world/Mykonos-View-3-1.jpg"
+                            },
+                            {
+                                "title": "Green Karma",
+                                "image": "https://teesta.world/Mykonos-View-1.jpg"
+                            },
+                            {
+                                "title": "Herbivore Haven",
+                                "image": "https://teesta.world/Mykonos-Stair-1.jpg"
+                            }
+                        ],
+                        "Jain": [
+                            {
+                                "title": "Jain Milan",
+                                "image": "https://teesta.world/Milos-Kleftiko-Beach-8-1.jpg"
+                            },
+                            {
+                                "title": "Ahimsa Tadka",
+                                "image": "https://teesta.world/IMG_5886+(1).jpg"
+                            },
+                            {
+                                "title": "Pure Path",
+                                "image": "https://teesta.world/IMG_4587+2 (1).jpeg"
+                            }
+                        ],
+                        "Halal": [
+                            {
+                                "title": "Zam Zam Halal",
+                                "image": "https://teesta.world/IMG_2769 (1).jpeg"
+                            },
+                            {
+                                "title": "Halal Treats",
+                                "image": "https://teesta.world/IMG_2557.jpeg"
+                            },
+                            {
+                                "title": "Noor Biryani",
+                                "image": "https://teesta.world/IMG_2032.jpeg"
+                            }
+                        ],
+                        "Local Cuisine": [
+                            {
+                                "title": "Athens Street Grill",
+                                "image": "https://teesta.world/Corfu-old-town--4.jpg"
+                            },
+                            {
+                                "title": "Taverna Vibe",
+                                "image": "https://teesta.world/Corfu-Beach--1.jpg"
+                            },
+                            {
+                                "title": "Greek Roots",
+                                "image": "https://teesta.world/Athens-12-1.jpg"
+                            }
+                        ]
+                    },
+                    "Mykonos": {
+                        "Indian": [
+                            {
+                                "title": "Spice Island",
+                                "image": "https://teesta.world/Athens-11-1.jpg"
+                            },
+                            {
+                                "title": "Bollywood Diner",
+                                "image": "https://teesta.world/Athens-Riviera-1-1.jpg"
+                            },
+                            {
+                                "title": "Tandoori Bay",
+                                "image": "https://teesta.world/Athens-6-1+copy (2).jpg"
+                            }
+                        ],
+                        "Veg": [
+                            {
+                                "title": "Mykonos Veggie Spot",
+                                "image": "https://teesta.world/Athens-10-1.jpg"
+                            },
+                            {
+                                "title": "Green Oasis",
+                                "image": "https://teesta.world/Athens-Plaka-2-1.jpg"
+                            },
+                            {
+                                "title": "Vegan Waves",
+                                "image": "https://teesta.world/athens3-1.jpg"
+                            }
+                        ],
+                        "Jain": [
+                            {
+                                "title": "Jain Serenity",
+                                "image": "https://teesta.world/Meteora-Monastery-View-pic-4-1.jpg"
+                            },
+                            {
+                                "title": "Pure Bliss Café",
+                                "image": "https://teesta.world/Mykonos-Stairs-1 (1).jpg"
+                            },
+                            {
+                                "title": "Ahimsa Delight",
+                                "image": "https://teesta.world/santorini-view-1.jpg"
+                            }
+                        ],
+                        "Halal": [
+                            {
+                                "title": "Halal Seaside Bites",
+                                "image": "https://teesta.world/IMG_4453 (3).jpeg"
+                            },
+                            {
+                                "title": "Mykonos Halal Grill",
+                                "image": "https://teesta.world/santorini-view2-1.jpg"
+                            },
+                            {
+                                "title": "Sunset Halal",
+                                "image": "https://teesta.world/Santorini-14-1.jpg"
+                            }
+                        ],
+                        "Local Cuisine": [
+                            {
+                                "title": "Nammos Restaurant",
+                                "image": "https://teesta.world/IMG_5885+(1) (1).jpg"
+                            },
+                            {
+                                "title": "Kiki's Tavern",
+                                "image": "https://teesta.world/Milos-Kleftiko-Beach-4-1.jpg"
+                            },
+                            {
+                                "title": "Avra Garden Restaurant",
+                                "image": "https://teesta.world/Milos-Kleftiko-Beach-1-1.jpg"
+                            }
+                        ]
+                    }
+                }
+            },
+            "similarTrips": [
+                {
+                    "title": "Dubai: The Ultimate 5-Day Itinerary",
+                    "price": "€1,500",
+                    "image": "https://teesta.world/IMG_2769 (1).jpeg"
+                },
+                {
+                    "title": "Dubai: Tickets & Transfers",
+                    "price": "€300",
+                    "image": "https://teesta.world/IMG_2557.jpeg"
+                }
+            ]
+        }
+    ]
+}

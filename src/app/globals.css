@@ -1,0 +1,169 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.table {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+  scrollbar-color: rgba(0, 0, 0, 0.25) rgba(5, 5, 5, 0.06);
+}
+
+
+.table-container {
+  border-inline-start: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+
+table {
+  width: 100%;
+  text-align: start;
+  border-radius: 8px 8px 0 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-cell {
+  border-inline-end: 1px solid #f0f0f0;
+}
+
+._1u80jhm6 {
+  flex: 1 1;
+}
+
+.ant-menu-light {
+  color: rgba(0, 0, 0, 0.88);
+  background: #ffffff;
+}
+
+.ant-menu-horizontal {
+  line-height: 46px;
+  border: 0;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  box-shadow: none;
+}
+
+._1u80jhm8 {
+  display: grid;
+  padding: 8px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.col-sm-12 {
+  --ant-display: block;
+  display: block;
+  display: var(--ant-display);
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-xs-24 {
+  --ant-display: block;
+  display: block;
+  display: var(--ant-display);
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col {
+  position: relative;
+  max-width: 100%;
+  min-height: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+._9845dd0 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #202020;
+  margin: 0;
+  padding: 0;
+}
+
+._9845dd1,
+._9845dd2 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  padding: 0;
+}
+
+._1lu1ibj1 {
+  padding: 32px 0;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  border-top: 1px solid #d8dadc;
+  border-bottom: 1px solid #d8dadc;
+  font-family: Poppins;
+}
+
+.text-decoration-skip-ink {
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+.divider {
+  box-sizing: border-box;
+  margin: 48px 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  border-block-start: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.menu-title-content {
+  margin-inline-start: 10px;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
