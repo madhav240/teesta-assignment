@@ -19,9 +19,12 @@ export default function Home() {
             <div className="flex flex-col items-stretch" style={{ maxWidth: 1448, gap: 24 }}>
               <div className="flex flex-col items-stretch">
                 <div>
-                  <div className="flex flex-col flex-wrap lg:-mr-1 lg:-ml-1" style={{ rowGap: 8 }}>
+                  <div
+                    className="flex flex-col lg:-mr-1 lg:-ml-1 lg:flex-row"
+                    style={{ rowGap: 8 }}
+                  >
                     <div
-                      className="relative flex lg:w-7/12"
+                      className="relative mx-1 flex lg:mx-0 lg:w-7/12"
                       style={{ paddingLeft: 4, paddingRight: 4 }}
                     >
                       <img
