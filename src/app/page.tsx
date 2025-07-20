@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { Fragment } from 'react'
 
 import ItinerarySection from '@/components/itinerary-section'
@@ -111,7 +112,7 @@ export default function Home() {
                     >
                       <img
                         alt="hotel"
-                        className="h-[434px] w-full rounded-tl-3xl rounded-bl-3xl object-cover"
+                        className="h-[434px] w-full rounded-tl-[20px] rounded-bl-[20px] object-cover"
                         data-nimg={1}
                         decoding="async"
                         height={432}
@@ -137,13 +138,17 @@ export default function Home() {
                           >
                             <img
                               alt="hotel"
-                              className="h-[212px] w-full object-cover"
                               decoding="async"
                               height={210}
                               loading="lazy"
                               src={image}
                               style={{ color: 'transparent' }}
                               width={261}
+                              className={classNames(
+                                'h-[212px] w-full object-cover',
+                                index === 1 && 'rounded-tr-[20px]',
+                                index === 3 && 'rounded-br-[20px]'
+                              )}
                             />
                           </div>
                         ))}
